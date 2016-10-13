@@ -1,74 +1,1849 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Справочник EMMET сокращений для ускорения верстки by STUDIONIONS</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Справочник EMMET сокращений для ускорения верстки</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/STUDIONIONS/handbook_emmet" class="btn">View on GitHub</a>
-      <a href="https://github.com/STUDIONIONS/handbook_emmet/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/STUDIONIONS/handbook_emmet/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+<html lang="en">
+	<head>
+		<title>Document</title>
+		<link type="text/css" rel="stylesheet" media="all" href="jquery.highlight.css" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container">
+		<div class="row">
+			<div class="col-lg-12 item-content">
+				<div class="td">
+					<h1>
+						<span class="title-cat"><i class="fa fa-code"></i> HTML и CSS:</span>
+						<span class="pos-title">Справочник EMMET сокращений для ускорения верстки</span>
+					</h1>
+				</div>
+			</div>
+			<div class="col-lg-12 article-content">
+				
+				<p>
+				Справочник EMMET сокращений или шпаргалка <strong>EMMET</strong> представляет собой сборник всех комбинаций команд или аббревиатур широко известного плагина для ускорения верстки. EMMET может <s>все</s> использоваться совместно с такими редакторами, как <strong>Sublime Text</strong>, <strong>PHPStorm</strong> и <strong>WebStorm</strong>, <strong>NetBeans</strong>, <strong>Eclipse</strong>, <strong>Aptana</strong>, <strong>Coda</strong>, <strong>TextMate</strong>, <strong>Komodo Edit</strong>, <strong>Notepad++</strong>, <strong>CodeMirror</strong>, <strong>Brackets</strong>, <strong>Adobe Dreamviewer</strong> и <strong>Ace</strong>
+				</p>
 
-    <section class="main-content">
-      <h1>
-<a id="Справочник-emmet-сокращений-для-ускорения-верстки" class="anchor" href="#%D0%A1%D0%BF%D1%80%D0%B0%D0%B2%D0%BE%D1%87%D0%BD%D0%B8%D0%BA-emmet-%D1%81%D0%BE%D0%BA%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D0%B9-%D0%B4%D0%BB%D1%8F-%D1%83%D1%81%D0%BA%D0%BE%D1%80%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B2%D0%B5%D1%80%D1%81%D1%82%D0%BA%D0%B8" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Справочник EMMET сокращений для ускорения верстки</h1>
+<table class="center-table table table-bordered table-striped">
+<tr>
+<td><h4>Сокращение</h4></td>
+<td><h4>Расшифровка сокращения</h4></td>
+</tr>
+<tr>
+<td colspan="2"><h5>Базовый синтаксис EMMET</h5></td>
+</tr>
+<tr>
+<td>Дочерний: ></td>
+<td>
+<pre>nav>ul>li
+&lt;nav&gt;
+	&lt;ul&gt;
+		&lt;li&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>Соединение: +</td>
+<td>
+<pre>div+p+bq
+&lt;div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;blockquote&gt;&lt;/blockquote&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>Поместить выше (в дереве HTML): ^</td>
+<td>
+<pre>div>p>span+em^bq
+&lt;div&gt;
+	&lt;p&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;&lt;/em&gt;&lt;/p&gt;
+	&lt;blockquote&gt;&lt;/blockquote&gt;
+&lt;/div&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>Группировать: ()</td>
+<td>
+<pre>div>(header>ul>li)+footer>p
+	&lt;div&gt;
+	&lt;header&gt;
+		&lt;ul&gt;
+			&lt;li&gt;&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/header&gt;
+	&lt;footer&gt;
+		&lt;p&gt;&lt;/p&gt;
+		&lt;/footer&gt;
+&lt;/div&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>Умножение: *</td>
+<td>
+<pre>ul>li*3
+&lt;ul&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>Нумерация: $</td>
+<td>
+<pre>ul>li.item_$*3
+&lt;ul&gt;
+	&lt;li class="item_1"&gt;&lt;/li&gt;
+	&lt;li class="item_2"&gt;&lt;/li&gt;
+	&lt;li class="item_3"&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>id и class</td>
+<td>
+<pre>#header+.class
+&lt;div id="header"&gt;&lt;/div&gt;
+&lt;div class="class"&gt;&lt;/div&gt;
 
-<p>Справочник EMMET сокращений или шпаргалка EMMET представляет собой сборник всех комбинаций команд или аббревиатур широко известного плагина для ускорения верстки. EMMET может все использоваться совместно с такими редакторами, как Sublime Text, PHPStorm и WebStorm, NetBeans, Eclipse, Aptana, Coda, TextMate, Komodo Edit, Notepad++, CodeMirror, Brackets, Adobe Dreamviewer и Ace</p>
+#hdr.cl_1.cl_2
+&lt;div id="hdr" class="cl_1 cl_2"&gt;&lt;/div&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>Атрибуты: []</td>
+<td>
+<pre>a[title="Подсказка ссылки"]
+&lt;a href="" title="Подсказка ссылки"&gt;&lt;/a&gt;
 
-<h3>
-<a id="Сокрашение-Базовый-синтаксис-emmet" class="anchor" href="#%D0%A1%D0%BE%D0%BA%D1%80%D0%B0%D1%88%D0%B5%D0%BD%D0%B8%D0%B5-%D0%91%D0%B0%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D1%81%D0%B8%D0%BD%D1%82%D0%B0%D0%BA%D1%81%D0%B8%D1%81-emmet" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Сокрашение (Базовый синтаксис EMMET)</h3>
+td[rowspan colspan title]
+&lt;td rowspan="" colspan="" title=""&gt;&lt;/td&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>Текст: {}</td>
+<td>
+<pre>.class{свободный текст}
+&lt;div class="class"&gt;свободный текст&lt;/div&gt;
 
-<h4>
-<a id="Расшифровка-сокращения" class="anchor" href="#%D0%A0%D0%B0%D1%81%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%BA%D0%B0-%D1%81%D0%BE%D0%BA%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Расшифровка сокращения</h4>
+p>{Кликните }+a{сюда}+{ скорее}
+&lt;p&gt;Кликните &lt;a href=""&gt;сюда&lt;/a&gt; скорее&lt;/p&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>Сокращение тегов</td>
+<td>
+<pre>.class
+&lt;div class="class"&gt;&lt;/div&gt;
 
-<p>Дочерний: &gt; </p>
+em>.class
+&lt;em&gt;&lt;span class="class"&gt;&lt;/span&gt;&lt;/em&gt;
 
-<p><em>Ввод</em></p>
+ul>.class
+&lt;ul&gt;
+	&lt;li class="class"&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-<pre><code>nav&gt;ul&gt;li
-</code></pre>
+table>.row>.col
+&lt;table&gt;
+	&lt;tr class="row"&gt;
+		&lt;td class="col"&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td colspan="2"><h5>HTML сокращения</h5></td>
+</tr>
+<tr>
+<td>!</td>
+<td>
+<pre>&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+	&lt;head&gt;
+		&lt;meta charset="UTF-8"&gt;
+		&lt;title&gt;Document&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
 
-<p><em>вывод</em></p>
+	&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>a</td>
+<td>
+<pre>&lt;a href=""&gt;&lt;/a&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>a:link</td>
+<td>
+<pre>&lt;a href="http://"&gt;&lt;/a&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>a:mail</td>
+<td>
+<pre>&lt;a href="mailto:"&gt;&lt;/a&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>base</td>
+<td>
+<pre>&lt;base href=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>br</td>
+<td>
+<pre>&lt;br&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>link</td>
+<td>
+<pre>&lt;link rel="stylesheet" href=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>link:css</td>
+<td>
+<pre>&lt;link rel="stylesheet" href="style.css"&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>link:favicon</td>
+<td>
+<pre>&lt;link rel="shortcut icon" type="image/x-icon"
+href="favicon.ico"&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>link:rss</td>
+<td>
+<pre>&lt;link rel="alternate" type="application/rss+xml"
+title="RSS" href="rss.xml"&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>link:atom</td>
+<td>
+<pre>&lt;link rel="alternate" type="application/atom+xml"
+title="Atom" href="atom.xml"&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>meta:utf</td>
+<td>
+<pre>&lt;meta http-equiv="Content-Type"
+content="text/html;charset=UTF-8"&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>meta:vp</td>
+<td>
+<pre>&lt;meta name="viewport" content="width=device-width,
+user-scalable=no, initial-scale=1.0,
+maximum-scale=1.0, minimum-scale=1.0"&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>meta:compat</td>
+<td>
+<pre>&lt;meta http-equiv="X-UA-Compatible" content="IE=7"&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>script:src</td>
+<td>
+<pre>&lt;script src=""&gt;&lt;/script&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>img</td>
+<td>
+<pre>&lt;img src="" alt=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>ifr</td>
+<td>
+<pre>&lt;iframe src="" frameborder="0"&gt;&lt;/iframe&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>emb</td>
+<td>
+<pre>&lt;embed src="" type=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>obj</td>
+<td>
+<pre>&lt;object data="" type=""&gt;&lt;/object&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>map</td>
+<td>
+<pre>&lt;map name=""&gt;&lt;/map&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>map+</td>
+<td>
+<pre>&lt;map name=""&gt;
+	&lt;area shape="" coords="" href="" alt=""&gt;
+&lt;/map&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>area</td>
+<td>
+<pre>&lt;area shape="" coords="" href="" alt=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>form</td>
+<td>
+<pre>&lt;form action=""&gt;&lt;/form&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>form:get<br />form:post</td>
+<td>
+<pre>&lt;form action="" method="get"&gt;&lt;/form&gt;
+&lt;form action="" method="post"&gt;&lt;/form&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td>label</td>
+<td>
+<pre>&lt;label for=""&gt;&lt;/label&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input</td>
+<td>
+<pre>&lt;input type="text"&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>inp</td>
+<td>
+<pre>&lt;input type="text" name="" id=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input:h</td>
+<td>
+<pre>&lt;input type="hidden" name=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input:p</td>
+<td>
+<pre>&lt;input type="password" name="" id=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input:c</td>
+<td>
+<pre>&lt;input type="checkbox" name="" id=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input:r</td>
+<td>
+<pre>&lt;input type="radio" name="" id=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input:f</td>
+<td>
+<pre>&lt;input type="file" name="" id=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input:s</td>
+<td>
+<pre>&lt;input type="submit" value=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input:i</td>
+<td>
+<pre>&lt;input type="image" src="" alt=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input:b</td>
+<td>
+<pre>&lt;input type="button" value=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>input:reset</td>
+<td>
+<pre>&lt;input type="reset" value=""&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>select</td>
+<td>
+<pre>&lt;select name="" id=""&gt;&lt;/select&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>select+</td>
+<td>
+<pre>&lt;select name="" id=""&gt;
+	&lt;option value=""&gt;&lt;/option&gt;
+&lt;/select&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>opt</td>
+<td>
+<pre>&lt;option value=""&gt;&lt;/option&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>tarea</td>
+<td>
+<pre>&lt;textarea name="" id="" cols="30" rows="10"&gt;
+&lt;/textarea&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>video</td>
+<td>
+<pre>&lt;video src=""&gt;&lt;/video&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>audio</td>
+<td>
+<pre>&lt;audio src=""&gt;&lt;/audio&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>bq</td>
+<td>
+<pre>&lt;blockquote&gt;&lt;/blockquote&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>fst</td>
+<td>
+<pre>&lt;fieldset&gt;&lt;/fieldset&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>btn</td>
+<td>
+<pre>&lt;button&gt;&lt;/button&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>btn:s</td>
+<td>
+<pre>&lt;button type="submit"&gt;&lt;/button&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>btn:b</td>
+<td>
+<pre>&lt;button type="button"&gt;&lt;/button&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>btn:r</td>
+<td>
+<pre>&lt;button type="reset"&gt;&lt;/button&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>sect</td>
+<td>
+<pre>&lt;section&gt;&lt;/section&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>art</td>
+<td>
+<pre>&lt;article&gt;&lt;/article&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>hdr</td>
+<td>
+<pre>&lt;header&gt;&lt;/header&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>ftr</td>
+<td>
+<pre>&lt;footer&gt;&lt;/footer&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>str</td>
+<td>
+<pre>&lt;strong&gt;&lt;/strong&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>ol+</td>
+<td>
+<pre>&lt;ol&gt;
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>ul+</td>
+<td>
+<pre>&lt;ul&gt;
+	&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>dl+</td>
+<td>
+<pre>&lt;dl&gt;
+	&lt;dt&gt;&lt;/dt&gt;
+	&lt;dd&gt;&lt;/dd&gt;
+&lt;/dl&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>table+</td>
+<td>
+<pre>&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>tr+</td>
+<td>
+<pre>&lt;tr&gt;
+	&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>c</td>
+<td>
+<pre>&lt;!-- Комментарий --&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>cc:ie6</td>
+<td>
+<pre>&lt;!--[if lte IE 6]&gt;
 
-<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">nav</span>&gt;
-    &lt;<span class="pl-ent">ul</span>&gt;
-        &lt;<span class="pl-ent">li</span>&gt;&lt;/<span class="pl-ent">li</span>&gt;
-    &lt;/<span class="pl-ent">ul</span>&gt;
-&lt;/<span class="pl-ent">nav</span>&gt;</pre></div>
+&lt;![endif]--&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>cc:ie</td>
+<td>
+<pre>&lt;!--[if IE]&gt;
 
-<p><a href="https://github.com/f" class="user-mention">@f</a>+</p>
+&lt;![endif]--&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>cc:noie</td>
+<td>
+<pre>&lt;!--[if !IE]&gt;&lt;!--&gt;
 
-<p><em>вывод</em></p>
+&lt;!--&lt;![endif]--&gt;</pre>
+</td>
+</tr>
+<tr>
+<td>Любой тег</td>
+<td>
+<pre>div
+&lt;div&gt;&lt;/div&gt;
 
-<div class="highlight highlight-source-css"><pre><span class="pl-k">@font-face</span> {
-    <span class="pl-c1"><span class="pl-c1">font-family</span></span>: <span class="pl-s"><span class="pl-pds">'</span>FontName<span class="pl-pds">'</span></span>;
-    <span class="pl-c1"><span class="pl-c1">src</span></span>: <span class="pl-c1">url</span>(<span class="pl-s"><span class="pl-pds">'</span>FileName.eot<span class="pl-pds">'</span></span>);
-    <span class="pl-c1"><span class="pl-c1">src</span></span>: <span class="pl-c1">url</span>(<span class="pl-s"><span class="pl-pds">'</span>FileName.eot?#iefix<span class="pl-pds">'</span></span>)
-    <span class="pl-c1">format</span>(<span class="pl-s"><span class="pl-pds">'</span>embedded-opentype<span class="pl-pds">'</span></span>),
-        <span class="pl-c1">url</span>(<span class="pl-s"><span class="pl-pds">'</span>FileName.woff<span class="pl-pds">'</span></span>) <span class="pl-c1">format</span>(<span class="pl-s"><span class="pl-pds">'</span>woff<span class="pl-pds">'</span></span>),
-        <span class="pl-c1">url</span>(<span class="pl-s"><span class="pl-pds">'</span>FileName.ttf<span class="pl-pds">'</span></span>) <span class="pl-c1">format</span>(<span class="pl-s"><span class="pl-pds">'</span>truetype<span class="pl-pds">'</span></span>),
-        <span class="pl-c1">url</span>(<span class="pl-s"><span class="pl-pds">'</span>FileName.svg#FontName<span class="pl-pds">'</span></span>) <span class="pl-c1">format</span>(<span class="pl-s"><span class="pl-pds">'</span>svg<span class="pl-pds">'</span></span>);
-    <span class="pl-c1"><span class="pl-c1">font-style</span></span>: <span class="pl-c1">normal</span>;
-    <span class="pl-c1"><span class="pl-c1">font-weight</span></span>: <span class="pl-c1">normal</span>;
-}</pre></div>
+span
+&lt;span&gt;&lt;/span&gt;
 
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/STUDIONIONS/handbook_emmet">Справочник EMMET сокращений для ускорения верстки</a> is maintained by <a href="https://github.com/STUDIONIONS">STUDIONIONS</a>.</span>
+Любой другой тег
+&lt;tagname&gt;&lt;/tagname&gt;
+</pre>
+</td>
+</tr>
+<tr>
+<td colspan="2"><h5>CSS сокращения</h5></td>
+</tr>
+<tr>
+<td>pos</td>
+<td>
+<pre>position: relative;</pre>
+</td>
+</tr>
+<tr>
+<td>posa</td>
+<td>
+<pre>position: absolute;</pre>
+</td>
+</tr>
+<tr>
+<td>posr</td>
+<td>
+<pre>position: relative;</pre>
+</td>
+</tr>
+<tr>
+<td>posf</td>
+<td>
+<pre>position: fixed;</pre>
+</td>
+</tr>
+<tr>
+<td>t</td>
+<td>
+<pre>top: ;</pre>
+</td>
+</tr>
+<tr>
+<td>t:a</td>
+<td>
+<pre>top: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>r</td>
+<td>
+<pre>right: ;</pre>
+</td>
+</tr>
+<tr>
+<td>r:a</td>
+<td>
+<pre>right: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>b</td>
+<td>
+<pre>bottom: ;</pre>
+</td>
+</tr>
+<tr>
+<td>b:a</td>
+<td>
+<pre>bottom: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>l</td>
+<td>
+<pre>left: ;</pre>
+</td>
+</tr>
+<tr>
+<td>l:a</td>
+<td>
+<pre>left: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>z</td>
+<td>
+<pre>z-index: ;</pre>
+</td>
+</tr>
+<tr>
+<td>za</td>
+<td>
+<pre>z-index: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>fl</td>
+<td>
+<pre>float: left;</pre>
+</td>
+</tr>
+<tr>
+<td>fln</td>
+<td>
+<pre>float: none;</pre>
+</td>
+</tr>
+<tr>
+<td>fr</td>
+<td>
+<pre>float: right;</pre>
+</td>
+</tr>
+<tr>
+<td>cl</td>
+<td>
+<pre>clear: both;</pre>
+</td>
+</tr>
+<tr>
+<td>d</td>
+<td>
+<pre>display: block;</pre>
+</td>
+</tr>
+<tr>
+<td>dn</td>
+<td>
+<pre>display: none;</pre>
+</td>
+</tr>
+<tr>
+<td>di</td>
+<td>
+<pre>display: inline;</pre>
+</td>
+</tr>
+<tr>
+<td>dib</td>
+<td>
+<pre>display: inline-block;</pre>
+</td>
+</tr>
+<tr>
+<td>dt</td>
+<td>
+<pre>display: table;</pre>
+</td>
+</tr>
+<tr>
+<td>dtc</td>
+<td>
+<pre>display: table-cell;</pre>
+</td>
+</tr>
+<tr>
+<td>dtr</td>
+<td>
+<pre>display: table-row;</pre>
+</td>
+</tr>
+<tr>
+<td>v</td>
+<td>
+<pre>visibility: hidden;</pre>
+</td>
+</tr>
+<tr>
+<td>vv</td>
+<td>
+<pre>visibility: visible;</pre>
+</td>
+</tr>
+<tr>
+<td>oh</td>
+<td>
+<pre>overflow: hidden;</pre>
+</td>
+</tr>
+<tr>
+<td>ovv</td>
+<td>
+<pre>overflow: visible;</pre>
+</td>
+</tr>
+<tr>
+<td>os</td>
+<td>
+<pre>overflow: scroll;</pre>
+</td>
+</tr>
+<tr>
+<td>oa</td>
+<td>
+<pre>overflow: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>zm</td>
+<td>
+<pre>zoom: 1;</pre>
+</td>
+</tr>
+<tr>
+<td>cu</td>
+<td>
+<pre>cursor: ;</pre>
+</td>
+</tr>
+<tr>
+<td>cup</td>
+<td>
+<pre>cursor: pointer;</pre>
+</td>
+</tr>
+<tr>
+<td>cud</td>
+<td>
+<pre>cursor: default;</pre>
+</td>
+</tr>
+<tr>
+<td>cuh</td>
+<td>
+<pre>cursor: hand;</pre>
+</td>
+</tr>
+<tr>
+<td>cuhe</td>
+<td>
+<pre>cursor: help;</pre>
+</td>
+</tr>
+<tr>
+<td>cum</td>
+<td>
+<pre>cursor: move;</pre>
+</td>
+</tr>
+<tr>
+<td>cut</td>
+<td>
+<pre>cursor: text;</pre>
+</td>
+</tr>
+<tr>
+<td>m</td>
+<td>
+<pre>margin: ;</pre>
+</td>
+</tr>
+<tr>
+<td>m:a</td>
+<td>
+<pre>margin: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>mt</td>
+<td>
+<pre>margin-top: ;</pre>
+</td>
+</tr>
+<tr>
+<td>mta</td>
+<td>
+<pre>margin-top: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>mr</td>
+<td>
+<pre>margin-right: ;</pre>
+</td>
+</tr>
+<tr>
+<td>mra</td>
+<td>
+<pre>margin-right: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>mb</td>
+<td>
+<pre>margin-bottom: ;</pre>
+</td>
+</tr>
+<tr>
+<td>mba</td>
+<td>
+<pre>margin-bottom: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>ml</td>
+<td>
+<pre>margin-left: ;</pre>
+</td>
+</tr>
+<tr>
+<td>mla</td>
+<td>
+<pre>margin-left: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>p</td>
+<td>
+<pre>padding: ;</pre>
+</td>
+</tr>
+<tr>
+<td>pt</td>
+<td>
+<pre>padding-top: ;</pre>
+</td>
+</tr>
+<tr>
+<td>pr</td>
+<td>
+<pre>padding-right: ;</pre>
+</td>
+</tr>
+<tr>
+<td>pb</td>
+<td>
+<pre>padding-bottom: ;</pre>
+</td>
+</tr>
+<tr>
+<td>pl</td>
+<td>
+<pre>padding-left: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bsh</td>
+<td>
+<pre>-webkit-box-shadow: inset hoff voff blur color;
+-moz-box-shadow: inset hoff voff blur color;
+box-shadow: inset hoff voff blur color;</pre>
+</td>
+</tr>
+<tr>
+<td>bshn</td>
+<td>
+<pre>-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;</pre>
+</td>
+</tr>
+<tr>
+<td>w</td>
+<td>
+<pre>width: ;</pre>
+</td>
+</tr>
+<tr>
+<td>wa</td>
+<td>
+<pre>width: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>h</td>
+<td>
+<pre>height: ;</pre>
+</td>
+</tr>
+<tr>
+<td>ha</td>
+<td>
+<pre>height: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>maw</td>
+<td>
+<pre>max-width: ;</pre>
+</td>
+</tr>
+<tr>
+<td>mah</td>
+<td>
+<pre>max-height: ;</pre>
+</td>
+</tr>
+<tr>
+<td>mw</td>
+<td>
+<pre>min-width: ;</pre>
+</td>
+</tr>
+<tr>
+<td>mh</td>
+<td>
+<pre>min-height: ;</pre>
+</td>
+</tr>
+<tr>
+<td>f</td>
+<td>
+<pre>font: ;</pre>
+</td>
+</tr>
+<tr>
+<td>f+</td>
+<td>
+<pre>font: 1em Arial,sans-serif;</pre>
+</td>
+</tr>
+<tr>
+<td>fw</td>
+<td>
+<pre>font-weight: ;</pre>
+</td>
+</tr>
+<tr>
+<td>fwn</td>
+<td>
+<pre>font-weight: normal;</pre>
+</td>
+</tr>
+<tr>
+<td>fwb</td>
+<td>
+<pre>font-weight: bold;</pre>
+</td>
+</tr>
+<tr>
+<td>fs</td>
+<td>
+<pre>font-style: italic;</pre>
+</td>
+</tr>
+<tr>
+<td>fsn</td>
+<td>
+<pre>font-style: normal;</pre>
+</td>
+</tr>
+<tr>
+<td>fsi</td>
+<td>
+<pre>font-style: italic;</pre>
+</td>
+</tr>
+<tr>
+<td>fz</td>
+<td>
+<pre>font-size: ;</pre>
+</td>
+</tr>
+<tr>
+<td>ff</td>
+<td>
+<pre>font-family: ;</pre>
+</td>
+</tr>
+<tr>
+<td>ffs</td>
+<td>
+<pre>font-family: serif;</pre>
+</td>
+</tr>
+<tr>
+<td>ffss</td>
+<td>
+<pre>font-family: sans-serif;</pre>
+</td>
+</tr>
+<tr>
+<td>ffm</td>
+<td>
+<pre>font-family: monospace;</pre>
+</td>
+</tr>
+<tr>
+<td>ffa</td>
+<td>
+<pre>font-family: Arial, "Helvetica Neue", Helvetica,
+sans-serif;</pre>
+</td>
+</tr>
+<tr>
+<td>va</td>
+<td>
+<pre>vertical-align: top;</pre>
+</td>
+</tr>
+<tr>
+<td>vm</td>
+<td>
+<pre>vertical-align: middle;</pre>
+</td>
+</tr>
+<tr>
+<td>vabl</td>
+<td>
+<pre>vertical-align: baseline;</pre>
+</td>
+</tr>
+<tr>
+<td>vb</td>
+<td>
+<pre>vertical-align: bottom;</pre>
+</td>
+</tr>
+<tr>
+<td>vs</td>
+<td>
+<pre>vertical-align: sub;</pre>
+</td>
+</tr>
+<tr>
+<td>ta</td>
+<td>
+<pre>text-align: left;</pre>
+</td>
+</tr>
+<tr>
+<td>tac</td>
+<td>
+<pre>text-align: center;</pre>
+</td>
+</tr>
+<tr>
+<td>tar</td>
+<td>
+<pre>text-align: right;</pre>
+</td>
+</tr>
+<tr>
+<td>taj</td>
+<td>
+<pre>text-align: justify;</pre>
+</td>
+</tr>
+<tr>
+<td>td</td>
+<td>
+<pre>text-decoration: none;</pre>
+</td>
+</tr>
+<tr>
+<td>tdu</td>
+<td>
+<pre>text-decoration: underline;</pre>
+</td>
+</tr>
+<tr>
+<td>tdo</td>
+<td>
+<pre>text-decoration: overline;</pre>
+</td>
+</tr>
+<tr>
+<td>tdl</td>
+<td>
+<pre>text-decoration: line-through;</pre>
+</td>
+</tr>
+<tr>
+<td>tt</td>
+<td>
+<pre>text-transform: uppercase;</pre>
+</td>
+</tr>
+<tr>
+<td>ttn</td>
+<td>
+<pre>text-transform: none;</pre>
+</td>
+</tr>
+<tr>
+<td>ttl</td>
+<td>
+<pre>text-transform: lowercase;</pre>
+</td>
+</tr>
+<tr>
+<td>ts</td>
+<td>
+<pre>text-shadow: hoff voff blur #000;</pre>
+</td>
+</tr>
+<tr>
+<td>tra</td>
+<td>
+<pre>text-shadow: h v blur rgba(0, 0, 0, .5);</pre>
+</td>
+</tr>
+<tr>
+<td>ts+</td>
+<td>
+<pre>text-shadow: 0 0 0 #000;</pre>
+</td>
+</tr>
+<tr>
+<td>tsn</td>
+<td>
+<pre>text-shadow: none;</pre>
+</td>
+</tr>
+<tr>
+<td>lh</td>
+<td>
+<pre>line-height: ;</pre>
+</td>
+</tr>
+<tr>
+<td>lts</td>
+<td>
+<pre>letter-spacing: ;</pre>
+</td>
+</tr>
+<tr>
+<td>ws</td>
+<td>
+<pre>white-space: ;</pre>
+</td>
+</tr>
+<tr>
+<td>wsn</td>
+<td>
+<pre>white-space: normal;</pre>
+</td>
+</tr>
+<tr>
+<td>wsnw</td>
+<td>
+<pre>white-space: nowrap;</pre>
+</td>
+</tr>
+<tr>
+<td>bg</td>
+<td>
+<pre>background: #000;</pre>
+</td>
+</tr>
+<tr>
+<td>bg+</td>
+<td>
+<pre>background: #fff url() 0 0 no-repeat;</pre>
+</td>
+</tr>
+<tr>
+<td>bn</td>
+<td>
+<pre>background: none;</pre>
+</td>
+</tr>
+<tr>
+<td>bgc</td>
+<td>
+<pre>background-color: #fff;</pre>
+</td>
+</tr>
+<tr>
+<td>bgt</td>
+<td>
+<pre>background-color: transparent;</pre>
+</td>
+</tr>
+<tr>
+<td>bgi</td>
+<td>
+<pre>background-image: url();</pre>
+</td>
+</tr>
+<tr>
+<td>bgin</td>
+<td>
+<pre>background-image: none;</pre>
+</td>
+</tr>
+<tr>
+<td>bgr</td>
+<td>
+<pre>background-repeat: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bgrn</td>
+<td>
+<pre>background-repeat: no-repeat;</pre>
+</td>
+</tr>
+<tr>
+<td>bgrx</td>
+<td>
+<pre>background-repeat: repeat-x;</pre>
+</td>
+</tr>
+<tr>
+<td>bgry</td>
+<td>
+<pre>background-repeat: repeat-y;</pre>
+</td>
+</tr>
+<tr>
+<td>bga</td>
+<td>
+<pre>background-attachment: ;</pre>
+</td>
+</tr>
+<tr>
+<td>baf</td>
+<td>
+<pre>background-attachment: fixed;</pre>
+</td>
+</tr>
+<tr>
+<td>bas</td>
+<td>
+<pre>background-attachment: scroll;</pre>
+</td>
+</tr>
+<tr>
+<td>bgp</td>
+<td>
+<pre>background-position: 0 0;</pre>
+</td>
+</tr>
+<tr>
+<td>bgs</td>
+<td>
+<pre>-webkit-background-size: ;
+background-size: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bsa</td>
+<td>
+<pre>-webkit-background-size: auto;
+background-size: auto;</pre>
+</td>
+</tr>
+<tr>
+<td>c</td>
+<td>
+<pre>color: #000;</pre>
+</td>
+</tr>
+<tr>
+<td>cra</td>
+<td>
+<pre>color: rgba(0, 0, 0, .5);</pre>
+</td>
+</tr>
+<tr>
+<td>op</td>
+<td>
+<pre>opacity: ;</pre>
+</td>
+</tr>
+<tr>
+<td>ct</td>
+<td>
+<pre>content: '';</pre>
+</td>
+</tr>
+<tr>
+<td>q</td>
+<td>
+<pre>quotes: ;</pre>
+</td>
+</tr>
+<tr>
+<td>ol</td>
+<td>
+<pre>outline: ;</pre>
+</td>
+</tr>
+<tr>
+<td>on</td>
+<td>
+<pre>outline: none;</pre>
+</td>
+</tr>
+<tr>
+<td>tbl</td>
+<td>
+<pre>table-layout: ;</pre>
+</td>
+</tr>
+<tr>
+<td>cs</td>
+<td>
+<pre>caption-side: ;</pre>
+</td>
+</tr>
+<tr>
+<td>ec</td>
+<td>
+<pre>empty-cells: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bd</td>
+<td>
+<pre>border: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bd+</td>
+<td>
+<pre>border: 1px solid #000;</pre>
+</td>
+</tr>
+<tr>
+<td>bdn</td>
+<td>
+<pre>border: none;</pre>
+</td>
+</tr>
+<tr>
+<td>bdc</td>
+<td>
+<pre>border-color: #000;</pre>
+</td>
+</tr>
+<tr>
+<td>bdi</td>
+<td>
+<pre>-webkit-border-image: url();
+-moz-border-image: url();
+-o-border-image: url();
+border-image: url();</pre>
+</td>
+</tr>
+<tr>
+<td>bdin</td>
+<td>
+<pre>-webkit-border-image: none;
+-moz-border-image: none;
+-o-border-image: none;
+border-image: none;</pre>
+</td>
+</tr>
+<tr>
+<td>bf</td>
+<td>
+<pre>-webkit-border-fit: repeat;
+border-fit: repeat;</pre>
+</td>
+</tr>
+<tr>
+<td>bdle</td>
+<td>
+<pre>border-length: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bsp</td>
+<td>
+<pre>border-spacing: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bds</td>
+<td>
+<pre>border-style: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bw</td>
+<td>
+<pre>border-width: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bt</td>
+<td>
+<pre>border-top: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bt+</td>
+<td>
+<pre>border-top: 1px solid #000;</pre>
+</td>
+</tr>
+<tr>
+<td>bdtn</td>
+<td>
+<pre>border-top: none;</pre>
+</td>
+</tr>
+<tr>
+<td>br</td>
+<td>
+<pre>border-right: ;</pre>
+</td>
+</tr>
+<tr>
+<td>br+</td>
+<td>
+<pre>border-right: 1px solid #000;</pre>
+</td>
+</tr>
+<tr>
+<td>bdrn</td>
+<td>
+<pre>border-right: none;</pre>
+</td>
+</tr>
+<tr>
+<td>bb</td>
+<td>
+<pre>border-bottom: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bb+</td>
+<td>
+<pre>border-bottom: 1px solid #000;</pre>
+</td>
+</tr>
+<tr>
+<td>bdbn</td>
+<td>
+<pre>border-bottom: none;</pre>
+</td>
+</tr>
+<tr>
+<td>bl</td>
+<td>
+<pre>border-left: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bl+</td>
+<td>
+<pre>border-left: 1px solid #000;</pre>
+</td>
+</tr>
+<tr>
+<td>bdln</td>
+<td>
+<pre>border-left: none;</pre>
+</td>
+</tr>
+<tr>
+<td>bdrs</td>
+<td>
+<pre>-webkit-border-radius: ;
+-moz-border-radius: ;
+border-radius: ;</pre>
+</td>
+</tr>
+<tr>
+<td>btrr</td>
+<td>
+<pre>border-top-right-radius: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bdtrs</td>
+<td>
+<pre>border-top-left-radius: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bbrr</td>
+<td>
+<pre>border-bottom-right-radius: ;</pre>
+</td>
+</tr>
+<tr>
+<td>bblr</td>
+<td>
+<pre>border-bottom-left-radius: ;</pre>
+</td>
+</tr>
+<tr>
+<td>lis</td>
+<td>
+<pre>list-style: ;</pre>
+</td>
+</tr>
+<tr>
+<td>lisn</td>
+<td>
+<pre>list-style: none;</pre>
+</td>
+</tr>
+<tr>
+<td>lst</td>
+<td>
+<pre>list-style-type: ;</pre>
+</td>
+</tr>
+<tr>
+<td>lstn</td>
+<td>
+<pre>list-style-type: none;</pre>
+</td>
+</tr>
+<tr>
+<td>lstd</td>
+<td>
+<pre>list-style-type: disc;</pre>
+</td>
+</tr>
+<tr>
+<td>lstc</td>
+<td>
+<pre>list-style-type: circle;</pre>
+</td>
+</tr>
+<tr>
+<td>lsts</td>
+<td>
+<pre>list-style-type: square;</pre>
+</td>
+</tr>
+<tr>
+<td>lstdc</td>
+<td>
+<pre>list-style-type: decimal;</pre>
+</td>
+</tr>
+<tr>
+<td>lsi</td>
+<td>
+<pre>list-style-image: ;</pre>
+</td>
+</tr>
+<tr>
+<td>lsin</td>
+<td>
+<pre>list-style-image: none;</pre>
+</td>
+</tr>
+<tr>
+<td>!</td>
+<td>
+<pre>!important</pre>
+</td>
+</tr>
+<tr>
+<td>@f</td>
+<td>
+<pre>@font-face {
+font-family:;
+src:url();
+}</pre>
+</td>
+</tr>
+<tr>
+<td>@f+</td>
+<td>
+<pre>@font-face {
+	font-family: 'FontName';
+	src: url('FileName.eot');
+	src: url('FileName.eot?#iefix')
+	format('embedded-opentype'),
+		url('FileName.woff') format('woff'),
+		url('FileName.ttf') format('truetype'),
+		url('FileName.svg#FontName') format('svg');
+	font-style: normal;
+	font-weight: normal;
+}</pre>
+</td>
+</tr>
+<tr>
+<td>@i</td>
+<td>
+<pre>@import url();</pre>
+</td>
+</tr>
+<tr>
+<td>@m</td>
+<td>
+<pre>@media screen {
 
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
-      </footer>
+}</pre>
+</td>
+</tr>
+<tr>
+<td>anim</td>
+<td>
+<pre>-webkit-animation: ;
+-o-animation: ;
+animation: ;</pre>
+</td>
+</tr>
+<tr>
+<td>ap</td>
+<td>
+<pre>-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;</pre>
+</td>
+</tr>
+<tr>
+<td>bgie</td>
+<td>
+<pre>filter:progid:DXImageTransform
+.Microsoft.AlphaImageLoader
+(src='x.png',sizingMethod='crop');</pre>
+</td>
+</tr>
+<tr>
+<td>cm</td>
+<td>
+<pre>/* Комментарий */</pre>
+</td>
+</tr>
+<tr>
+<td>colm</td>
+<td>
+<pre>columns: ;</pre>
+</td>
+</tr>
+<tr>
+<td>trf</td>
+<td>
+<pre>-webkit-transform: ;
+-moz-transform: ;
+-ms-transform: ;
+-o-transform: ;
+transform: ;</pre>
+</td>
+</tr>
+<tr>
+<td>trfr</td>
+<td>
+<pre>-webkit-transform: rotate(angle);
+-moz-transform: rotate(angle);
+-ms-transform: rotate(angle);
+-o-transform: rotate(angle);
+transform: rotate(angle);</pre>
+</td>
+</tr>
+<tr>
+<td>trfsc</td>
+<td>
+<pre>-webkit-transform: scale(x, y);
+-moz-transform: scale(x, y);
+-ms-transform: scale(x, y);
+-o-transform: scale(x, y);
+transform: scale(x, y);</pre>
+</td>
+</tr>
+<tr>
+<td>trft</td>
+<td>
+<pre>-webkit-transform: translate(x, y);
+-moz-transform: translate(x, y);
+-ms-transform: translate(x, y);
+-o-transform: translate(x, y);
+transform: translate(x, y);</pre>
+</td>
+</tr>
+<tr>
+<td>tfo</td>
+<td>
+<pre>-webkit-transform-origin: ;
+-moz-transform-origin: ;
+-ms-transform-origin: ;
+-o-transform-origin: ;
+transform-origin: ;</pre>
+</td>
+</tr>
+<tr>
+<td>trs</td>
+<td>
+<pre>-webkit-transition: prop time;
+-moz-transition: prop time;
+-ms-transition: prop time;
+-o-transition: prop time;
+transition: prop time;</pre>
+</td>
+</tr>
+<tr>
+<td>trsde</td>
+<td>
+<pre>-webkit-transition-delay: time;
+-moz-transition-delay: time;
+-ms-transition-delay: time;
+-o-transition-delay: time;
+transition-delay: time;</pre>
+</td>
+</tr>
+<tr>
+<td>trsdu</td>
+<td>
+<pre>-webkit-transition-duration: time;
+-moz-transition-duration: time;
+-ms-transition-duration: time;
+-o-transition-duration: time;
+transition-duration: time;</pre>
+</td>
+</tr>
+<tr>
+<td>trsp</td>
+<td>
+<pre>-webkit-transition-property: prop;
+-moz-transition-property: prop;
+-ms-transition-property: prop;
+-o-transition-property: prop;
+transition-property: prop;</pre>
+</td>
+</tr>
+<tr>
+<td>us</td>
+<td>
+<pre>-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;</pre>
+</td>
+</tr>
+</table>
 
-    </section>
+<p>В некоторые CSS сокращения можно подставлять свои значения, например:</p>
 
-  
-  </body>
+<pre>/* mt20 */
+.class{
+	margin-top: 20px;
+}
+
+/* fsz20 */
+.class{
+	font-size: 20px;
+}
+
+/* p15 */
+.class{
+	padding: 15px;
+}
+</pre>
+
+			</div>
+			</div>
+		</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="jquery.highlight.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('pre').addClass("code").highlight({
+				source:1,
+				zebra:1,
+				indent:'space',
+				list:'ol'
+			});
+		})
+	</script>
+	<style>
+		.center-table {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+	</body>
 </html>
