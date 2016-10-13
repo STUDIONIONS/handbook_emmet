@@ -7,7 +7,7 @@
 
 *Ввод*
 ```
- nav>ul>li
+nav>ul>li
 ```
 *вывод*
 ```html
@@ -16,4 +16,20 @@
         <li></li>
     </ul>
 </nav>
+```
+@f+
+
+*вывод*
+```css
+@font-face {
+    font-family: 'FontName';
+    src: url('FileName.eot');
+    src: url('FileName.eot?#iefix')
+    format('embedded-opentype'),
+        url('FileName.woff') format('woff'),
+        url('FileName.ttf') format('truetype'),
+        url('FileName.svg#FontName') format('svg');
+    font-style: normal;
+    font-weight: normal;
+}
 ```
