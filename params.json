@@ -1,0 +1,6 @@
+{
+  "name": "Справочник EMMET сокращений для ускорения верстки",
+  "tagline": "",
+  "body": "# Справочник EMMET сокращений для ускорения верстки\r\nСправочник EMMET сокращений или шпаргалка EMMET представляет собой сборник всех комбинаций команд или аббревиатур широко известного плагина для ускорения верстки. EMMET может все использоваться совместно с такими редакторами, как Sublime Text, PHPStorm и WebStorm, NetBeans, Eclipse, Aptana, Coda, TextMate, Komodo Edit, Notepad++, CodeMirror, Brackets, Adobe Dreamviewer и Ace\r\n\r\n### Сокрашение (Базовый синтаксис EMMET)\r\n#### Расшифровка сокращения\r\nДочерний: > \r\n\r\n*Ввод*\r\n```\r\nnav>ul>li\r\n```\r\n*вывод*\r\n```html\r\n<nav>\r\n    <ul>\r\n        <li></li>\r\n    </ul>\r\n</nav>\r\n```\r\n@f+\r\n\r\n*вывод*\r\n```css\r\n@font-face {\r\n    font-family: 'FontName';\r\n    src: url('FileName.eot');\r\n    src: url('FileName.eot?#iefix')\r\n    format('embedded-opentype'),\r\n        url('FileName.woff') format('woff'),\r\n        url('FileName.ttf') format('truetype'),\r\n        url('FileName.svg#FontName') format('svg');\r\n    font-style: normal;\r\n    font-weight: normal;\r\n}\r\n```",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
